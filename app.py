@@ -13,10 +13,10 @@ LOG.setLevel(logging.INFO)
 def scale(payload):
     """Scales Payload"""
 
-    LOG.info(f"Scaling Payload: {payload}")
-    scaler = StandardScaler().fit(payload)
-    scaled_adhoc_predict = scaler.transform(payload)
-    return scaled_adhoc_predict
+LOG.info(f"Scaling Payload: {payload}")
+scaler = StandardScaler().fit(payload)
+scaled_adhoc_predict = scaler.transform(payload)
+return scaled_adhoc_predict
 
 @app.route("/")
 def home():
@@ -54,15 +54,14 @@ def predict():
 
     """
 
-
-    json_payload = request.json
-    LOG.info(f"JSON payload: {json_payload}")
-    inference_payload = pd.DataFrame(json_payload)
-    LOG.info(f"inference payload DataFrame: {inference_payload}")
-    scaled_payload = scale(inference_payload)
-    prediction = list(clf.predict(scaled_payload))
-    LOG.info(f"prediction {prediction}")
-    return jsonify({'prediction': prediction})
+json_payload = request.json
+LOG.info(f"JSON payload: {json_payload}")
+inference_payload = pd.DataFrame(json_payload)
+LOG.info(f"inference payload DataFrame: {inference_payload}")
+scaled_payload = scale(inference_payload)
+prediction = list(clf.predict(scaled_payload))
+LOG.info(f"prediction {prediction}")
+return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
     clf = joblib.load("boston_housing_prediction.joblib")

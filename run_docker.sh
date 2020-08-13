@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker container run -dt --name udacity --port 80:80 udacity_bala:latest
+docker container run -dt --name udacity --port 80:8000 udacity_bala:latest

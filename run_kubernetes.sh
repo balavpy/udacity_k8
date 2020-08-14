@@ -16,4 +16,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward udacity 80:8000
+kubectl port-forward udacity 8000:80

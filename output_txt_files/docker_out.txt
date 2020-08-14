@@ -1,1 +1,18 @@
-<paste log output from Docker prediction, here>
+[2020-08-14 05:20:00,097] INFO in app: JSON payload:
+{json_payload}
+[2020-08-14 05:20:00,100] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-08-14 05:20:00,100] INFO in app: Scaling Payload:
+{payload}
+[2020-08-14 05:20:00,104] INFO in app: PREDICTION: [20.35373177134412]
+
+172.17.0.1 - - [14/Aug/2020 05:20:00] "POST /predict HTTP/1.1" 200 -
+[2020-08-14 05:20:16,287] INFO in app: JSON payload:
+{json_payload}
+[2020-08-14 05:20:16,288] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-08-14 05:20:16,288] INFO in app: Scaling Payload:
+{payload}
+[2020-08-14 05:20:16,292] INFO in app: PREDICTION: [20.35373177134412]
+
+172.17.0.1 - - [14/Aug/2020 05:20:16] "POST /predict HTTP/1.1" 200 -

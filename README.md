@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+https://circleci.com/gh/balavpy/udacity_k8.svg?style=svg
 
 ## Project Overview
 

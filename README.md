@@ -1,4 +1,5 @@
-https://circleci.com/gh/balavpy/udacity_k8.svg?style=svg
+  
+[![CircleCI](https://circleci.com/gh/balavpy/udacity_k8.svg?style=svg)](<LINK>)
 
 ## Project Overview
 

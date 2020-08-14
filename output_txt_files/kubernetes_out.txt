@@ -1,1 +1,10 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) [ec2-user@ip-172-31-1-4 udacity_k8]$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "udacity" already exists
+NAME      READY   STATUS    RESTARTS   AGE
+udacity   1/1     Running   0          2m13s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+

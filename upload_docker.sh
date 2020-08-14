@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # This file tags and uploads an image to Docker Hub
 
@@ -5,12 +6,12 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=balavpy20/udacity_bala:latest
+dockerpath=balavpy20
 
-# Step 2:  
+# Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker push balavpy20/udacity_bala:latest
+docker push $dockerpath/udacity_bala:latest
